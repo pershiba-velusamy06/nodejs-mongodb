@@ -2,11 +2,11 @@ import express from 'express';
 import mongoose from 'mongoose';
  import rootRouter from './combainRouters.js';
 
-const app = express();
+export const app = express();
 
 export const db = mongoose.connect('mongodb+srv://pershibavelusamy06:pershiba123@elredmongolearnings.uev0ssg.mongodb.net/', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
 });
 
 db.then(() => {
@@ -23,3 +23,4 @@ app.listen(5000, () => {
     console.log("Node server is running in port 5000");
 })
 app.timeout = 60000;
+
