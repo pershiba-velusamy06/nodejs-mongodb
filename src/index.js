@@ -4,11 +4,7 @@ import rootRouter from './combainRouters.js';
 
  const app = express();
 
-mongoose.connect('mongodb+srv://pershibavelusamy06:pershiba123@elredmongolearnings.uev0ssg.mongodb.net/', {
-  useNewUrlParser: false,
-  useUnifiedTopology: false
-
-});
+mongoose.connect('mongodb+srv://pershibavelusamy06:pershiba123@elredmongolearnings.uev0ssg.mongodb.net/');
 
 // db.then(() => {
 //     console.log('Database connected successfully...');
