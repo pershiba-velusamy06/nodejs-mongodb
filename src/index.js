@@ -14,7 +14,7 @@ mongoose.connect('mongodb+srv://pershibavelusamy06:pershiba123@elredmongolearnin
 
 
 const db = mongoose.connection;
-db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+db.on('error', (err)=>{console.log( 'MongoDB connection error:',err)});
 db.once('open', () => {
   console.log('Connected to MongoDB');
 });
