@@ -22,3 +22,4 @@ app.use('/', rootRouter);
 app.listen(5000, () => {
     console.log("Node server is running in port 5000");
 })
+app.timeout = 60000;
